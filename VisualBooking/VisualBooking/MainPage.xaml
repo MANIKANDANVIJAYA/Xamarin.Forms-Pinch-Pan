@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:VisualBooking" 
+             xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions"
+             mc:Ignorable="d"
+             x:Class="VisualBooking.MainPage"
+             Title="Visual Booking">
+
+    <ScrollView>
+
+        <local:PinchToZoomContainer>
+            <local:PinchToZoomContainer.Content>
+
+
+                <StackLayout Orientation="Vertical">
+
+                    <Grid Padding="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image x:Name="img1" Source="chair_avaiable.png"  Grid.Row="0" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image x:Name="img2" Source="chair_avaiable.png" Grid.Row="1" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped2" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image x:Name="img3" Source="chair_avaiable.png" Grid.Row="2" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped3" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image x:Name="img4" Source="chair_avaiable.png" Grid.Row="3" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped4" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+
+                        <Image x:Name="img5" Source="chair_avaiable.png" Grid.Row="0" Grid.Column="1">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped5" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image x:Name="img6" Source="chair_unavaiable.png" Grid.Row="1" Grid.Column="1">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped6" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image x:Name="img7" Source="chair_avaiable.png" Grid.Row="2" Grid.Column="1">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped7" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image x:Name="img8" Source="chair_avaiable.png" Grid.Row="3" Grid.Column="1">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped8" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image x:Name="img9" Source="chair_avaiable.png" Grid.Row="0" Grid.Column="2">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped9" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image  x:Name="img10" Source="chair_avaiable.png" Grid.Row="1" Grid.Column="2">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped10" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image x:Name="img11" Source="chair_avaiable.png" Grid.Row="2" Grid.Column="2" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped11" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image  x:Name="img12" Source="chair_avaiable.png" Grid.Row="3" Grid.Column="2">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped12" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+
+                        <Image  x:Name="img13" Source="chair_avaiable.png" Grid.Row="0" Grid.Column="3">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped13" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image  x:Name="img14" Source="chair_avaiable.png" Grid.Row="1" Grid.Column="3">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped14" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image  x:Name="img15" Source="chair_avaiable.png" Grid.Row="2" Grid.Column="3">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped15" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Image  x:Name="img16" Source="chair_unavaiable.png" Grid.Row="3" Grid.Column="3">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped16" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                    </Grid>
+
+                    <Button Text="Book Seat" BorderWidth="5" BackgroundColor="LightBlue" Margin="10"
+                        HeightRequest="45" TextColor="Black" CornerRadius="5" Clicked="Button_Clicked"/>
+                </StackLayout>
+
+
+            </local:PinchToZoomContainer.Content>
+        </local:PinchToZoomContainer>
+
+    </ScrollView>
+
+</ContentPage>
